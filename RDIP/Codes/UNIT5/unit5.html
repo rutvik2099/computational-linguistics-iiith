@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual labs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <style >
+	
+    </style>
+</head>
+
+         <script type="text/javascript" src="main.js"></script>
+	
+	<script src="../Libraries/min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+<body class="content ">
+    <br>
+    <div id="ToSelect" class=" justify-content-center mx-auto"></div>
+    <select name="choice" id="AllCorpuses" onchange="ForSelection()" class=" justify-content-center mx-auto justify-content: space-between;
+    align-items: center;">
+        <option value="ChooseCorpus">---Select a Corpus---</option>
+        <option value="FirstCorpus"  id="Corpus1">Corpus 1</option>
+        <option value="SecondCorpus" id="Corpus2">Corpus 2</option>
+        <option value="ThirdCorpus"  id="Corpus3">Corpus 3</option>
+    </select>
+    </div>
+    <p id="FirstText" class="content"></p>
+    <br>
+    <p id="FirstLine" class="content"></p>
+    <br>
+
+    <div id="FirstTable" style="display:none">
+        <table>
+            <tr>
+                <td class="border mx-auto">#tokens:</td>
+                <td class="border mx-auto"> <input type="text" id="TokenCounter" name="FirstName" size="4"></td>
+            </tr>
+            <tr>
+                <td class="border mx-auto">#types:</td>
+                <td class="border mx-auto"><input type="text" id="TypeCounter" name="FirstName" size="4"></td>
+            </tr>
+
+        </table>
+    </div>
+    <br>
+    <div id="FirstButton"></div>
+    <br>
+    <p id="Right" class="container text-success"></p>
+    <p id="Wrong" class="container text-danger"></p>
+    <div id="SecondButton"></div>
+
+
+    <p id="LastText"></p>
+    <p id="LastSpace"></p>
+    <div id="Last" class=" justify-content-center mx-auto">
+    </div>
+    <br>
+    <div id="ThirdButton">
+
+
+
+    </div>
+    <br>
+    <p id="Right2" class="container text-success"></p>
+    <p id="Wrong2" class="container text-danger"></p>
+
+    
+</body>
+
+</html>
